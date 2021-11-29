@@ -2,10 +2,16 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>MODULO DI REGISTRAZIONE</title>
+    <title>FORM</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<!--QUESTO E' SOLO UN FORM DI ESEMPIO, NELLA PRATICA NON SI DOVREBBE
+MAI USARE L'APPROCCIO DI PRESENTARE MOLTI CAMPI PER L'INPUT DELL'UTENTE.
+SI PRESENTANO DA COMPILARE SOLO LE INFORMAZIONI ESSENZIALI METTENDO
+A DISPOSIZIONE ULTERIORI SEZIONI PER IL COMPLETAMENTO DELL'IMMISSIONE
+DATI. PRESENTANDO MOLTI CAMPI DI INPUT, L'UTENTE POTREBBE TROVARSI
+SPAESATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.--> 
   <h1>ESEMPIO DI UN FORM CON METHOD POST</h1>
   <hr>
   <form action="" method="post">
@@ -30,9 +36,9 @@
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
-                <td><input type="radio" id="maschio" value="Maschio" required></td>
+                <td><input type="radio" id="maschio" value="Maschio" name="sesso" required></td>
                 <td><label for="femmina">Femmina</label></td>
-                <td><input type="radio" id="femmina" value="Femmina" required></td>
+                <td><input type="radio" id="femmina" value="Femmina" name="sesso" required></td>
             </tr>
         </table>
     </fieldset> 
@@ -123,9 +129,9 @@
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
-                <td><input type="radio" id="maschio" value="Maschio" required></td>
+                <td><input type="radio" id="maschio" value="Maschio" name="sesso" required></td>
                 <td><label for="femmina">Femmina</label></td>
-                <td><input type="radio" id="femmina" value="Femmina" required></td>
+                <td><input type="radio" id="femmina" value="Femmina" name="sesso" required></td>
             </tr>
         </table>
     </fieldset> 
