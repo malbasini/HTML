@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>MODULO DI REGISTRAZIONE</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>ESEMPIO DI UN FORM CON METHOD POST</h1>
+  <hr>
+  <form action="" method="post">
+    <fieldset>
+        <legend>Dati Generali</legend>
+        <table>
+            <tr>
+                <th><label for="nome">Nome</label></th>
+                <td colspan="3"><input type="text" id="nome" required autofocus></td>
+            </tr>
+            <tr>
+                <th><label for="cognome">Cognome</label></th>
+                <td colspan="3"><input type="text" id="cognome" required></td>
+            </tr>
+            <tr>
+                <th><label for="eta">Età</label></th>
+                <td colspan="3"><input type="number" min="18" max="90" id="eta" required></td>
+            </tr>
+            <tr>
+                <th><label for="data">Data di Nascita</label></th>
+                <td colspan="3"><input type="date" id="data" required></td>
+            </tr>
+            <tr>
+                <td><label for="maschio">Maschio</label></td>
+                <td><input type="radio" id="maschio" value="Maschio" required></td>
+                <td><label for="femmina">Femmina</label></td>
+                <td><input type="radio" id="femmina" value="Femmina" required></td>
+            </tr>
+        </table>
+    </fieldset> 
+    <fieldset>
+        <legend>Indirizzo</legend>
+        <table>
+            <tr>
+                <th><label for="citta">Città</label></th>
+                <td><input list="citta">
+                    <datalist id="citta">
+                      <option value="Roma">
+                      <option value="Milano">
+                      <option value="Torino">
+                      <option value="Bologna">
+                      <option value="Napoli">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="cap">CAP</label></th>
+                <td><input type="text" id="cap" required pattern="[1-9]{5}"></td>
+            </tr>
+            <tr>
+                <th><label for="provincia">Provincia</label></th>
+                <td><input type="text" id="provincia" required maxlength="2"></td>
+            </tr>
+            <tr>
+                <th><label for="via">Via</label></th>
+                <td><input type="text" minlength="8"  maxlength="50" id="via" required></td>
+            </tr>
+            <tr>
+                <th><label for="stato">Stato</label></th>
+                <td><select id="stato" name="stato">
+                    <option value="Italia" selected>Italia</option>
+                    <option value="Estero">Estero</option>
+                  </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset> 
+    <fieldset>
+        <legend>Contatti</legend>
+        <table>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" id="email" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <th><label for="telefono">Telefono</label></th>
+                <td><input type="tel" id="telefono" required></td>
+            </tr>
+            <tr>
+                <th><label for="sitoweb">Sito Web</label></th>
+                <td><input type="url" id="sitoweb"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Invia">
+            </td>
+        </tr>
+    </table>
+  </form>
+  <h1>ESEMPIO DI UN FORM CON METHOD GET</h1>
+  <form action="" method="get">
+    <fieldset>
+        <legend>Dati Generali</legend>
+        <table>
+            <tr>
+                <th><label for="nome">Nome</label></th>
+                <td colspan="3"><input type="text" id="nome" required autofocus></td>
+            </tr>
+            <tr>
+                <th><label for="cognome">Cognome</label></th>
+                <td colspan="3"><input type="text" id="cognome" required></td>
+            </tr>
+            <tr>
+                <th><label for="eta">Età</label></th>
+                <td colspan="3"><input type="number" min="18" max="90" id="eta" required></td>
+            </tr>
+            <tr>
+                <th><label for="data">Data di Nascita</label></th>
+                <td colspan="3"><input type="date" id="data" required></td>
+            </tr>
+            <tr>
+                <td><label for="maschio">Maschio</label></td>
+                <td><input type="radio" id="maschio" value="Maschio" required></td>
+                <td><label for="femmina">Femmina</label></td>
+                <td><input type="radio" id="femmina" value="Femmina" required></td>
+            </tr>
+        </table>
+    </fieldset> 
+    <br>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Invia">
+            </td>
+        </tr>
+    </table>
+  </form>
+</body>
+</html>
