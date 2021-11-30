@@ -5,19 +5,19 @@ table, th, td {
     text-align: center;
   }
 .multimedia{
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
     border: 2px solid black;
     background-color: bisque;
     margin: 0 auto;
   }
 .audio{
-  margin-top: 130px;
+  margin-top: 140px;
 }
 .video{
-  margin-top: 20px;
+  margin-top: 30px;
 }
-.body{
+.class1{
   background-color:darkolivegreen;
   text-align: center;
 }
