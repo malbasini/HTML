@@ -1,5 +1,4 @@
-table, th, td {
-    border: 0px solid black;
+table {
     width: 40%;
     text-align: left;
   }
@@ -12,4 +11,7 @@ h1{
 }
 body{
   background-color: aquamarine;
+}
+th,td{
+  width: 200px;
 }

@@ -11,7 +11,7 @@ MAI USARE L'APPROCCIO DI PRESENTARE MOLTI CAMPI PER L'INPUT DELL'UTENTE.
 SI PRESENTANO DA COMPILARE SOLO LE INFORMAZIONI ESSENZIALI METTENDO
 A DISPOSIZIONE ULTERIORI SEZIONI PER IL COMPLETAMENTO DELL'IMMISSIONE
 DATI. PRESENTANDO MOLTI CAMPI DI INPUT, L'UTENTE POTREBBE TROVARSI
-DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.--> 
+DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.--> 
   <h1>ESEMPIO DI UN FORM CON METHOD POST</h1>
   <hr>
   <form action="" method="post">
@@ -20,19 +20,19 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.-->
         <table>
             <tr>
                 <th><label for="nome">Nome</label></th>
-                <td colspan="3"><input type="text" id="nome" required autofocus></td>
+                <td colspan="3"><input type="text" id="nome" placeholder="Nome" required autofocus></td>
             </tr>
             <tr>
                 <th><label for="cognome">Cognome</label></th>
-                <td colspan="3"><input type="text" id="cognome" required></td>
+                <td colspan="3"><input type="text" id="cognome" placeholder="Cognome" required></td>
             </tr>
             <tr>
                 <th><label for="eta">Età</label></th>
-                <td colspan="3"><input type="number" min="18" max="90" id="eta" required></td>
+                <td colspan="3"><input type="number" placeholder="Età"  min="18" max="90" id="eta" required></td>
             </tr>
             <tr>
                 <th><label for="data">Data di Nascita</label></th>
-                <td colspan="3"><input type="date" id="data" required></td>
+                <td colspan="3"><input type="date" id="data" required placeholder="Data di Nascita"></td>
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
@@ -47,7 +47,7 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.-->
         <table>
             <tr>
                 <th><label for="citta">Città</label></th>
-                <td><input list="citta">
+                <td><input list="citta" placeholder="Città">
                     <datalist id="citta">
                       <option value="Roma">
                       <option value="Milano">
@@ -59,21 +59,21 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.-->
             </tr>
             <tr>
                 <th><label for="cap">CAP</label></th>
-                <td><input type="text" id="cap" required pattern="[1-9]{5}"></td>
+                <td><input type="text" id="cap" placeholder="CAP"   required pattern="[1-9]{5}"></td>
             </tr>
             <tr>
                 <th><label for="provincia">Provincia</label></th>
-                <td><input type="text" id="provincia" required maxlength="2"></td>
+                <td><input type="text" id="provincia" placeholder="Provincia" required maxlength="2"></td>
             </tr>
             <tr>
                 <th><label for="via">Via</label></th>
-                <td><input type="text" minlength="8"  maxlength="50" id="via" required></td>
+                <td><input type="text" minlength="8" placeholder="Via"  maxlength="50" id="via" required></td>
             </tr>
             <tr>
                 <th><label for="stato">Stato</label></th>
                 <td><select id="stato" name="stato">
-                    <option value="Italia" selected>Italia</option>
                     <option value="Estero">Estero</option>
+                    <option value="Italia" selected>Italia</option>
                   </select>
                 </td>
             </tr>
@@ -84,15 +84,15 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.-->
         <table>
             <tr>
                 <th><label for="email">Email</label></th>
-                <td><input type="email" id="email" required autocomplete="off"></td>
+                <td><input type="email" id="email" placeholder="Email" required autocomplete="off"></td>
             </tr>
             <tr>
                 <th><label for="telefono">Telefono</label></th>
-                <td><input type="tel" id="telefono" required></td>
+                <td><input type="tel" id="telefono" placeholder="Telefono" required></td>
             </tr>
             <tr>
                 <th><label for="sitoweb">Sito Web</label></th>
-                <td><input type="url" id="sitoweb"></td>
+                <td><input type="url" id="sitoweb" placeholder="Sito Web"></td>
             </tr>
         </table>
     </fieldset>
@@ -113,19 +113,19 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN SITO.-->
         <table>
             <tr>
                 <th><label for="nome">Nome</label></th>
-                <td colspan="3"><input type="text" id="nome" required autofocus></td>
+                <td colspan="3"><input type="text" id="nome" placeholder="Nome" required autofocus></td>
             </tr>
             <tr>
                 <th><label for="cognome">Cognome</label></th>
-                <td colspan="3"><input type="text" id="cognome" required></td>
+                <td colspan="3"><input type="text" id="cognome" placeholder="Cognome" required></td>
             </tr>
             <tr>
                 <th><label for="eta">Età</label></th>
-                <td colspan="3"><input type="number" min="18" max="90" id="eta" required></td>
+                <td colspan="3"><input type="number" placeholder="Età" min="18" max="90" id="eta" required></td>
             </tr>
             <tr>
                 <th><label for="data">Data di Nascita</label></th>
-                <td colspan="3"><input type="date" id="data" required></td>
+                <td colspan="3"><input type="date" id="data" placeholder="Data di Nascita" required></td>
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
