@@ -6,12 +6,13 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!--QUESTO E' SOLO UN FORM DI ESEMPIO, NELLA PRATICA NON SI DOVREBBE
-MAI USARE L'APPROCCIO DI PRESENTARE MOLTI CAMPI PER L'INPUT DELL'UTENTE.
-SI PRESENTANO DA COMPILARE SOLO LE INFORMAZIONI ESSENZIALI METTENDO
-A DISPOSIZIONE ULTERIORI SEZIONI PER IL COMPLETAMENTO DELL'IMMISSIONE
-DATI. PRESENTANDO MOLTI CAMPI DI INPUT, L'UTENTE POTREBBE TROVARSI
-DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.--> 
+    <!--THIS IS ONLY AN EXAMPLE FORM, IN PRACTICE YOU SHOULD NOT
+    NEVER USE THE APPROACH OF PRESENTING MANY FIELDS FOR USER INPUT.
+    SUBMIT TO FILL IN ONLY THE ESSENTIAL INFORMATION BY PUTTING
+    FURTHER SECTIONS AVAILABLE FOR COMPLETING THE ADMISSION
+    DATA. WITH MANY INPUT FIELDS, THE USER COULD BE
+    DISORIENTED AND FORGIVING FOR EXAMPLE TO REGISTER 
+    ON A REGISTRATION FORM.-->
   <h1>ESEMPIO DI UN FORM CON METHOD POST</h1>
   <hr>
   <form action="" method="post">
@@ -20,25 +21,31 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.-
         <table>
             <tr>
                 <th><label for="nome">Nome</label></th>
-                <td colspan="3"><input type="text" id="nome" placeholder="Nome" required autofocus></td>
+                <td colspan="3"><input type="text" id="nome" 
+                    placeholder="Nome" required autofocus></td>
             </tr>
             <tr>
                 <th><label for="cognome">Cognome</label></th>
-                <td colspan="3"><input type="text" id="cognome" placeholder="Cognome" required></td>
+                <td colspan="3"><input type="text" id="cognome" 
+                    placeholder="Cognome" required></td>
             </tr>
             <tr>
                 <th><label for="eta">Età</label></th>
-                <td colspan="3"><input type="number" placeholder="Età"  min="18" max="90" id="eta" required></td>
+                <td colspan="3"><input type="number" 
+                    placeholder="Età"  min="18" max="90" id="eta" required></td>
             </tr>
             <tr>
                 <th><label for="data">Data di Nascita</label></th>
-                <td colspan="3"><input type="date" id="data" required placeholder="Data di Nascita"></td>
+                <td colspan="3"><input type="date" id="data" 
+                    required placeholder="Data di Nascita"></td>
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
-                <td><input type="radio" id="maschio" value="Maschio" name="sesso" required></td>
+                <td><input type="radio" id="maschio" value="Maschio" 
+                    name="sesso" required></td>
                 <td><label for="femmina">Femmina</label></td>
-                <td><input type="radio" id="femmina" value="Femmina" name="sesso" required></td>
+                <td><input type="radio" id="femmina" value="Femmina" 
+                    name="sesso" required></td>
             </tr>
         </table>
     </fieldset> 
@@ -59,15 +66,19 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.-
             </tr>
             <tr>
                 <th><label for="cap">CAP</label></th>
-                <td><input type="text" id="cap" placeholder="CAP"   required pattern="[1-9]{5}"></td>
+                <td><input type="text" id="cap" 
+                    placeholder="CAP"   required pattern="[1-9]{5}"></td>
             </tr>
             <tr>
                 <th><label for="provincia">Provincia</label></th>
-                <td><input type="text" id="provincia" placeholder="Provincia" required maxlength="2"></td>
+                <td><input type="text" id="provincia" 
+                    placeholder="Provincia" required maxlength="2"></td>
             </tr>
             <tr>
                 <th><label for="via">Via</label></th>
-                <td><input type="text" minlength="8" placeholder="Via"  maxlength="50" id="via" required></td>
+                <td><input type="text" minlength="8" 
+                    
+                    placeholder="Via"  maxlength="50" id="via" required></td>
             </tr>
             <tr>
                 <th><label for="stato">Stato</label></th>
@@ -84,15 +95,18 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.-
         <table>
             <tr>
                 <th><label for="email">Email</label></th>
-                <td><input type="email" id="email" placeholder="Email" required autocomplete="off"></td>
+                <td><input type="email" id="email" 
+                    placeholder="Email" required autocomplete="off"></td>
             </tr>
             <tr>
                 <th><label for="telefono">Telefono</label></th>
-                <td><input type="tel" id="telefono" placeholder="Telefono" required></td>
+                <td><input type="tel" id="telefono" 
+                    placeholder="Telefono" required></td>
             </tr>
             <tr>
                 <th><label for="sitoweb">Sito Web</label></th>
-                <td><input type="url" id="sitoweb" placeholder="Sito Web"></td>
+                <td><input type="url" id="sitoweb" 
+                    placeholder="Sito Web"></td>
             </tr>
         </table>
     </fieldset>
@@ -113,25 +127,31 @@ DISORIENTATO E RINUNCIARE AD ESEMPIO A REGISTRARSI SU UN FORM DI REGISTRAZIONE.-
         <table>
             <tr>
                 <th><label for="nome">Nome</label></th>
-                <td colspan="3"><input type="text" id="nome" placeholder="Nome" required autofocus></td>
+                <td colspan="3"><input type="text" id="nome" name="nome" 
+                    placeholder="Nome" required autofocus></td>
             </tr>
             <tr>
                 <th><label for="cognome">Cognome</label></th>
-                <td colspan="3"><input type="text" id="cognome" placeholder="Cognome" required></td>
+                <td colspan="3"><input type="text" id="cognome" name="cognome"
+                    placeholder="Cognome" required></td>
             </tr>
             <tr>
                 <th><label for="eta">Età</label></th>
-                <td colspan="3"><input type="number" placeholder="Età" min="18" max="90" id="eta" required></td>
+                <td colspan="3"><input type="number" 
+                    placeholder="Età" min="18" max="90" id="eta" name="eta" required></td>
             </tr>
             <tr>
                 <th><label for="data">Data di Nascita</label></th>
-                <td colspan="3"><input type="date" id="data" placeholder="Data di Nascita" required></td>
+                <td colspan="3"><input type="date" id="data" 
+                    placeholder="Data di Nascita" name="data" required></td>
             </tr>
             <tr>
                 <td><label for="maschio">Maschio</label></td>
-                <td><input type="radio" id="maschio" value="Maschio" name="sesso" required></td>
+                <td><input type="radio" id="maschio" value="Maschio" 
+                    name="sesso" required></td>
                 <td><label for="femmina">Femmina</label></td>
-                <td><input type="radio" id="femmina" value="Femmina" name="sesso" required></td>
+                <td><input type="radio" id="femmina" value="Femmina" 
+                    name="sesso" required></td>
             </tr>
         </table>
     </fieldset> 
